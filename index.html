@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/tab-icon.png">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-2 col-xs-1"></div>
+            <div class="col-md-4 col-sm-8 col-xs-10">
+                <div class="ans-container">
+                    <span onclick="deletingChar()" class="glyphicon glyphicon-remove"></span>
+                    <span onclick="resetfun()" class="glyphicon glyphicon-refresh"></span>
+                    <p id="answere-box">
+                        
+                    </p>
+                </div>
+                <div class="numbers-container">
+                   <div>
+                        <span onclick="numEnt(event)">
+                            7
+                        </span>
+                        <span onclick="numEnt(event)">
+                            8
+                        </span>
+                        <span onclick="numEnt(event)">
+                            9
+                        </span>
+                        <span onclick="numEnt(event)">
+                            *
+                        </span>
+                   </div>
+                   <div>
+                        <span onclick="numEnt(event)">
+                            4
+                        </span>
+                        <span onclick="numEnt(event)">
+                            5
+                        </span>
+                        <span onclick="numEnt(event)">
+                            6
+                        </span>
+                        <span onclick="numEnt(event)">
+                            /
+                        </span>
+                   </div>
+                   <div>
+                        <span onclick="numEnt(event)">
+                            1
+                        </span>
+                        <span onclick="numEnt(event)">
+                            2
+                        </span>
+                        <span onclick="numEnt(event)">
+                            3
+                        </span>
+                        <span onclick="numEnt(event)">
+                            -
+                        </span>
+                   </div>
+                   <div>
+                        <span onclick="numEnt(event)">
+                            0
+                        </span>
+                        <span class="plus" onclick="numEnt(event)">
+                            +
+                        </span>
+                        <span onclick="equalToOperator()">
+                            =
+                        </span>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-2 col-xs-1"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(19,55,90);
+}
+.container{
+    padding-top: 10em;
+}
+.ans-container{
+    background-color: rgb(111,167,253);
+    height: 10em;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.ans-container>p{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin: 1.79em auto;
+    padding: 0em 1em;
+    overflow-x: scroll; 
+    padding-bottom: 1.42em;
+}
+p::-webkit-scrollbar{
+    background-color: rgb(111,167,253);
+    height: 10px;
+}
+p::-webkit-scrollbar-thumb{
+    background-color: #6b6bd4;
+    background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
+}
+.glyphicon-remove{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-shadow: 1px 1px black;
+    transition: all 0.3s;
+    padding: 0.1em;    
+}
+.glyphicon-refresh{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-shadow: 1px 1px black;
+    transition: all 0.3s;
+    padding: 0.1em;
+}
+.glyphicon:hover{
+    color: white;
+}
+.numbers-container{
+    background-color: #4f8bd6;
+    background: radial-gradient(#4e84e2 5%, #33a4da 15%, #568aa9 60%);
+}    
+.numbers-container>div{
+    margin: 0em auto;
+    text-align: center;
+}
+.numbers-container span{
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.5em;
+    width: 20%;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 3px #757c82;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.numbers-container span:hover{
+    background-color: #7bb9e5;
+}
+.numbers-container span:active {
+    background-color: #3f7da9;
+    box-shadow: 0 0px #666;
+    transform: translateY(3px);
+  }
+@media screen and (max-width:346px) {
+    .numbers-container span{
+        width: 18.5%;
+    }
+}
+.numbers-container>div>.plus{
+    width: 44%;
+}
+
